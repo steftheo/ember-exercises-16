@@ -1,1 +1,6 @@
-{{outlet}}
+{{#each model as |bookmarks|}}
+<form {{action saveBookmark on="submit"}}>
+
+</form>
+  <h3>{{bookmarks}}</h3>
+{{/each}}
